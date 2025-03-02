@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Foundation</title>
+    <style>
+        button {
+            margin : 20px ;
+            padding: 20px ;
+            color: white ;
+            background-color: brown;
+            border-radius: 20px ;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="header">Header</h1>
+    <h2 class="second"><span>Hey how you doing!</span></h2>
+    <button class = "button" onclick = "Click()" ondblclick="HandleDBL()" onmouseenter="MouseEnter()" onmouseleave="MouseLeave()">Sign up</button>
+
+    <input type="text" onkeydown = "KeyDown(event)" onkeyup = "KeyUp(event)" onkeypress = "KeyPress(event)" placeholder="Type something!!">
+
+    <form onsubmit = "Submit(event)">
+        <input type="text" onfocus = "Focus()" , onblur = "Blur()"placeholder="Enter your name">
+        <select onchange = "Change()">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+        <button type="submit">Submit here</button>
+    </form>
+
+    <script src="foundation.js"></script>
+</body>
+</html>

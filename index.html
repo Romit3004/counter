@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="counter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+</head>
+<body>
+    <div class="heading">
+        <h1>Click Counter</h1>
+        <h3>Click counter online. Click "+" button or space to count</h3>
+    </div>
+
+    <section class="main">
+        <div class="display">
+            <h1 class = "count">0</h1>
+            <div class="icons">
+                <box-icon type='solid' name='up-arrow' class = "up" onclick = "Increase()"></box-icon>
+                <box-icon type='solid' name='down-arrow' class = "down" onclick = "Decrease()"></box-icon> 
+            </div>  
+            <span class="material-symbols-outlined" onclick="Clear()">
+                close
+            </span>
+        </div>
+        <button class="increase" onclick = "Increase()"><p>+</p></button>
+        <button class="decrease" onclick = "Decrease()"><p>-</p></button>
+    </section>
+
+    <script src="counter.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+</html>
